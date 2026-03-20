@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Student Portal</h1>
+
+<!-- 🔍 Search -->
+<div class="search-container">
+    <input type="text" id="search" placeholder="Search by name or email">
+    <button onclick="handleSearch()">Search</button>
+</div>
+
+<!-- 🔘 Buttons -->
+<div class="button-container">
+    <button onclick="sortAZ()">Sort A → Z</button>
+    <button onclick="sortZA()">Sort Z → A</button>
+    <button onclick="sortMarks()">Sort by Marks</button>
+    <button onclick="filterPassing()">Passing</button>
+    <button onclick="sortClass()">Sort by Class</button>
+    <button onclick="sortGender()">Sort by Gender</button>
+    <button onclick="reset()">Reset</button>
+</div>
+
+<!-- 📊 Main Table -->
+<table id="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Class</th>
+            <th>Marks</th>
+            <th>Passing</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<!-- Gender Tables -->
+<div id="genderTables"></div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
